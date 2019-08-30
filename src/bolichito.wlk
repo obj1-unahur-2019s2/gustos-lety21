@@ -18,7 +18,7 @@ object bolichito {
 	}
 	
 	method estaDesequilibrado() {
-		// completar
+		return objetoEnMostrador.peso() > objetoEnVidriera.peso()
 	}
 	
 	method tieneAlgoDeColor(color) {
@@ -27,5 +27,9 @@ object bolichito {
 
 	method puedeOfrecerleAlgoA(persona) {
 		// completar
+	}
+	
+	method puedeMejorar() {
+		return self.esMonocromatico() or self.estaDesequilibrado()
 	}
 }
